@@ -11,6 +11,12 @@ import Notifications from './pages/Notifications'
 import Clients from './pages/Clients'
 import Branch from './pages/Branch'
 import Audit from './pages/Audit'
+import LeadsPipeline from './pages/leads/LeadsPipeline'
+import LeadsList from './pages/leads/LeadsList'
+import LeadDetail from './pages/leads/LeadDetail'
+import LeadsTasks from './pages/leads/LeadsTasks'
+import LeadsAnalytics from './pages/leads/LeadsAnalytics'
+import LeadsCapture from './pages/leads/LeadsCapture'
 
 function Guard({ children }) {
   const { currentUser } = useApp()
@@ -27,6 +33,12 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route element={<Guard><Layout /></Guard>}>
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="leads" element={<LeadsPipeline />} />
+            <Route path="leads/list" element={<LeadsList />} />
+            <Route path="leads/detail" element={<LeadDetail />} />
+            <Route path="leads/tasks" element={<LeadsTasks />} />
+            <Route path="leads/analytics" element={<LeadsAnalytics />} />
+            <Route path="leads/capture" element={<LeadsCapture />} />
             <Route path="kyc" element={<KYC />} />
             <Route path="collateral" element={<Collateral />} />
             <Route path="finance" element={<Finance />} />

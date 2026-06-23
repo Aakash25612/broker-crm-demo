@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 
 const modules = [
-  { n: '01', title: 'KYC & Onboarding', items: ['Digital KYC intake', 'BOID mapping', 'Document management', 'CRN logging', 'Compliance tracker'] },
-  { n: '02', title: 'Collateral & Finance', items: ['Collateral upload portal', 'Approval workflow', 'ConnectIPS ledger', 'T+2 settlement tracker'] },
-  { n: '03', title: 'Notification Gateway', items: ['Sparrow SMS / WhatsApp API', 'Margin call alerts', 'EOD summaries', 'Corporate action broadcasts'] },
-  { n: '04', title: 'Client Segmentation', items: ['Volume-based tagging', 'RM mapping', 'Dormancy alerts (30/60/90 days)'] },
-  { n: '05', title: 'Branch & Controls', items: ['Multi-branch RBAC', 'Sub-broker commissions', 'Immutable audit logs'] },
+  { n: '01', title: 'Lead Management', items: ['Pipeline kanban', 'Lead scoring', 'RM assignment', 'Follow-up tasks', 'Campaign tracking', 'Convert to KYC'] },
+  { n: '02', title: 'KYC & Onboarding', items: ['Digital KYC intake', 'BOID mapping', 'Document management', 'CRN logging', 'Compliance tracker'] },
+  { n: '03', title: 'Collateral & Finance', items: ['Collateral upload portal', 'Approval workflow', 'ConnectIPS ledger', 'T+2 settlement tracker'] },
+  { n: '04', title: 'Notification Gateway', items: ['Sparrow SMS / WhatsApp API', 'Margin call alerts', 'EOD summaries', 'Corporate action broadcasts'] },
+  { n: '05', title: 'Client & Branch Controls', items: ['Volume-based tagging', 'RM mapping', 'Multi-branch RBAC', 'Sub-broker commissions', 'Audit logs'] },
 ]
 
 export default function Landing() {

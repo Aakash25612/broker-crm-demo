@@ -1,11 +1,12 @@
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 import {
-  Bell, Building2, FileCheck, GitBranch, LayoutDashboard, LogOut, Shield, Users, Wallet,
+  Bell, Building2, FileCheck, GitBranch, LayoutDashboard, LogOut, Shield, Target, Users, Wallet,
 } from 'lucide-react'
 import { useApp } from '../context/AppContext'
 
 const nav = [
   { to: '/dashboard', label: 'Overview', icon: LayoutDashboard, end: true },
+  { to: '/leads', label: 'Lead Management', icon: Target },
   { to: '/kyc', label: 'KYC & Onboarding', icon: FileCheck },
   { to: '/collateral', label: 'Collateral', icon: Wallet },
   { to: '/finance', label: 'Finance & T+2', icon: Building2 },
